@@ -18,6 +18,7 @@ public class UserController {
     @RequestMapping("selectAll")
     @ResponseBody
     public List<User> selectAll(ModelMap modelMap){
+        System.out.pringln("123456");
         List<User> list=userService.selectAll();
         modelMap.addAttribute("list",list);
         return list;
